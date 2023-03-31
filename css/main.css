@@ -1,0 +1,8 @@
+@import "header.css";
+@import 'caracteristicas.css';
+
+
+*{
+    padding: 0;
+    margin: 0;
+}

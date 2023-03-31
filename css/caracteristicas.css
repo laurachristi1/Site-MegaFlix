@@ -1,0 +1,55 @@
+.caracteristicas{
+    background-color: #190330;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.caracteristicasTitulo{
+    color: white;
+    grid-column: 1/13;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.caracteristicas__bloco1, .caracteristicas__bloco2, .caracteristicas__bloco3, .caracteristicas__bloco4{
+    background-color: #290944;
+    margin: 16px;
+    border-radius: 8px;
+    padding: 8px;
+}
+.caracteristicas__bloco1{
+    grid-row-start: 2;
+    grid-column: 3/7;
+}
+.caracteristicas__bloco2{
+    grid-row-start: 2;
+    grid-column: 7/12;
+}
+.caracteristicas__bloco3{
+    grid-row-start: 3;
+    grid-column: 3/7;
+}
+.caracteristicas__bloco4{
+    grid-row-start: 3;
+    grid-column: 7/12;
+}
+
+h4{
+    color: white;
+    font: 'Andika';
+    text-align: center;
+}
+p{
+    font-weight: 200;
+    font: 'Andika';
+    color: white;
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .caracteristicas{
+        display: flex;
+        flex-direction: column;
+    }
+}
