@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
-
-    
+    <link rel="stylesheet" href="./css/atropos.css" />
 </head>
 <body>
     <header>
@@ -48,33 +47,94 @@
         <div class="caracteristicas__bloco1">
             <h4>Experiência imersiva e personalizada</h4>
             <p>Oferecemos uma Experiência de usuário envolvente e personalizada, adaptando-se às preferências individuais dos usuários.</p>
-
         </div>
-        
         <div class="caracteristicas__bloco2">
             <h4>Navegação intuitiva e design responsividade</h4>
             <p>Oferecemos levamaos a sério a beleza e a intuitividade do nosso site e garamtimos uma exclente experiência</p>
         </div>
-        
-
         <div class="caracteristicas__bloco3">
             <h4>Conteúdo de alta qualidade e atualizdado</h4>
              <p>Descubra o que está em alta no momento</p>
         </div>
-
-        
-
         <div class="caracteristicas__bloco4">
             <h4>Interação e engajamento com a comunidade</h4>
             <p>Tenha uma comunidade ativa e engajada que compartilha sugestões e compartilha informações.</p>
         </div>
-        
         </section>
-
         <section class="filmesPrincipais">
+            <h1 class="filmesPrincipais__title">Filmes mais aclamados e desejados</h1>
+            <div class="atropos my-atropos">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <!-- put your custom content here -->
+                      <img src="./imagens/animaisFantasticos.jpg" alt="Animais Fantasticos">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="atropos my-atropos2">
+                  <!-- scale container (required) -->
+                  <div class="atropos-scale">
+                    <!-- rotate container (required) -->
+                    <div class="atropos-rotate">
+                      <!-- inner container (required) -->
+                      <div class="atropos-inner">
+                        <!-- put your custom content here -->
+                        <img src="./imagens/harryPotter.jpeg" alt="Harry Potter ">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="atropos my-atropos3">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                      <!-- rotate container (required) -->
+                      <div class="atropos-rotate">
+                        <!-- inner container (required) -->
+                        <div class="atropos-inner">
+                          <!-- put your custom content here -->
+                          <img src="./imagens/aquaman.jpeg" alt="Aquaman">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
         </section>
     </main>
+    <script src="js/atropos.min.js"></script>
+    <script>
+        const myAtropos = Atropos({
+        el: '.my-atropos',
+        shadowScale: 1.65,
+        shadow: true,
+        shadowOffset: 40,
+        rotateXMax: 35,
+        });
+
+        const myAtropos2 = Atropos({
+        el: '.my-atropos2',
+        shadowScale: 1.65,
+        shadow: true,
+        shadowOffset: 40,
+        rotateXMax: 35,
+        });
+
+        const myAtropos3 = Atropos({
+        el: '.my-atropos3',
+        shadowScale: 1.65,
+        shadow: true,
+        shadowOffset: 40,
+        rotateXMax: 35,
+        });
+    </script>
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
         <script>
