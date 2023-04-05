@@ -18,6 +18,7 @@
                 <img class="logo" src="./imagens/logo.png" alt="logo Site">
                 <h6>Mega Flix</h6>
             </div>
+            
             <ul class="menu__links">
                 <li class="home"> <a class="home" href="">Home</a> <hr> </li>
                 <li> <a href="">Filmes</a> </li>
@@ -26,20 +27,26 @@
                 <li> <a href="">Pedidos</a> </li>
                 <li> <a href="">Sobre</a> </li>
             </ul>
+
             <ul>
                 <li> <i class="fa-solid fa-bars"></i></li>
                 <li> <i class="fa-solid fa-user"></i></li>
                 <li> <i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
+
         </nav>
         <h1 class="animate__animated animate__tada">Descubra <br> Conecte-se e emocione-se</h1>
         <h2 class="animate__animated animate__tada" >Encontre os lançamentos de filmes imperdíveis e viva emoções incríveis</h2>
+        
         <ul class="btn"> 
             <li class="btn__start"> <a href=""> COMEÇAR</a></li>
             <li class="btn__plan"> <a href="">PLANOS</a></li>
         </ul>
+
     </header>
+    
     <main>
+
         <section class="caracteristicas">
             
         <h3 class="caracteristicasTitulo">Principais características</h3>
@@ -48,19 +55,23 @@
             <h4>Experiência imersiva e personalizada</h4>
             <p>Oferecemos uma Experiência de usuário envolvente e personalizada, adaptando-se às preferências individuais dos usuários.</p>
         </div>
+
         <div class="caracteristicas__bloco2">
             <h4>Navegação intuitiva e design responsividade</h4>
             <p>Oferecemos levamaos a sério a beleza e a intuitividade do nosso site e garamtimos uma exclente experiência</p>
         </div>
+
         <div class="caracteristicas__bloco3">
             <h4>Conteúdo de alta qualidade e atualizdado</h4>
              <p>Descubra o que está em alta no momento</p>
         </div>
+
         <div class="caracteristicas__bloco4">
             <h4>Interação e engajamento com a comunidade</h4>
             <p>Tenha uma comunidade ativa e engajada que compartilha sugestões e compartilha informações.</p>
         </div>
         </section>
+        
         <section class="filmesPrincipais">
             <h1 class="filmesPrincipais__title">Filmes mais aclamados e desejados</h1>
             <div class="atropos my-atropos">
@@ -100,19 +111,63 @@
                         <div class="atropos-inner">
                           <!-- put your custom content here -->
                           <img src="./imagens/aquaman.jpeg" alt="Aquaman">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
+                  <div class="atropos my-atropos4">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                      <!-- rotate container (required) -->
+                      <div class="atropos-rotate">
+                        <!-- inner container (required) -->
+                        <div class="atropos-inner">
+                          <!-- put your custom content here -->
+                          <img src="./imagens/avatar.jpeg" alt="Avatar">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="atropos my-atropos5">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                      <!-- rotate container (required) -->
+                      <div class="atropos-rotate">
+                        <!-- inner container (required) -->
+                        <div class="atropos-inner">
+                          <!-- put your custom content here -->
+                          <img src="./imagens/GOT.jpg" alt="Game Of Thrones (GOT)">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="atropos my-atropos6">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                      <!-- rotate container (required) -->
+                      <div class="atropos-rotate">
+                        <!-- inner container (required) -->
+                        <div class="atropos-inner">
+                          <!-- put your custom content here -->
+                          <img src="./imagens/roupinhaCinzaColada.jpg" alt="Roupinha colada">
                         </div>
                       </div>
                     </div>
                   </div>
 
         </section>
+
     </main>
+
     <script src="js/atropos.min.js"></script>
+
     <script>
         const myAtropos = Atropos({
         el: '.my-atropos',
-        shadowScale: 1.65,
+        shadowScale: 1.10,
         shadow: true,
         shadowOffset: 40,
         rotateXMax: 35,
@@ -120,7 +175,7 @@
 
         const myAtropos2 = Atropos({
         el: '.my-atropos2',
-        shadowScale: 1.65,
+        shadowScale: 1.10,
         shadow: true,
         shadowOffset: 40,
         rotateXMax: 35,
@@ -128,7 +183,31 @@
 
         const myAtropos3 = Atropos({
         el: '.my-atropos3',
-        shadowScale: 1.65,
+        shadowScale: 1.10,
+        shadow: true,
+        shadowOffset: 40,
+        rotateXMax: 35,
+        });
+
+        const myAtropos4 = Atropos({
+        el: '.my-atropos4',
+        shadowScale: 1.10,
+        shadow: true,
+        shadowOffset: 40,
+        rotateXMax: 35,
+        });
+
+        const myAtropos5 = Atropos({
+        el: '.my-atropos5',
+        shadowScale: 1.10,
+        shadow: true,
+        shadowOffset: 40,
+        rotateXMax: 35,
+        });
+
+        const myAtropos6 = Atropos({
+        el: '.my-atropos6',
+        shadowScale: 1.10,
         shadow: true,
         shadowOffset: 40,
         rotateXMax: 35,
@@ -161,8 +240,11 @@
             easing: "ease-out",
             delay: 800
         });  
-
     </script>
+
+    <footer>
+      <h4> ©  Criado por Kaian Novaes e desenvolvido por Laura Chirsti 😍 ♥</h4>
+    </footer>
         
 </body>
 </html>

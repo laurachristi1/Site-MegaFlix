@@ -2,13 +2,86 @@
     height: 700px;
     background: rgb(178,58,243);
     background: linear-gradient(90deg, rgba(178,58,243,1) 0%, rgba(94,22,165,1) 100%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    display: grid;
 }
+
+.filmesPrincipais__title{
+    text-align: center;
+    font-size: xx-large;    
+    margin-top: 24px;
+    grid-row-start: 1;
+    grid-column: 2/3;
+    justify-self: center;
+}
+
 img, .atropos {
     width: 400px;
     height: auto;
     border-radius: 16px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
 }
+
+.my-atropos, .my-atropos2, .my-atropos3, .my-atropos4, .my-atropos5, .my-atropos6{
+    padding-left: 104px;
+    padding-bottom: 24px;
+}
+
+
+.my-atropos{
+    grid-row-start: 3;
+    grid-column: 1;
+}
+
+.my-atropos2{
+    grid-row-start: 3;
+    grid-column: 2;
+}
+
+.my-atropos3{
+    grid-row-start: 3;
+    grid-column: 3;
+}
+
+.my-atropos4{
+    grid-row-start: 5;
+    grid-column: 1;
+}
+
+.my-atropos5{
+    grid-row-start: 5;
+    grid-column: 2;
+}
+
+.my-atropos6{
+    grid-row-start: 5;
+    grid-column: 3;
+}
+
+@media (max-width: 720px){
+    .filmesPrincipais {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+    }
+    img, .atropos {
+        width: 300px;
+        height: auto;
+        border-radius: 12px;
+    }
+    .my-atropos, .my-atropos2, .my-atropos3, .my-atropos4, .my-atropos5, .my-atropos6{
+        padding-top: 16px;
+        margin-right: 104px;
+    }
+}
+
+@media (max-width: 400px){
+    img, .atropos {
+        height: auto;
+        border-radius: 12px;
+    }
+
+}
+
